@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "daenspace690-spark"
+version = "0.1.0"
+description = ""
+authors = ["Kevin Riley <kp.riley@icloud.com>"]
+readme = "README.md"
+packages = [{include = "daenspace690_spark"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyspark = "^3.3.2"
+python-dotenv = "^1.0.0"
+pandas = "^1.5.3"
+plotly = "^5.14.0"
+httpx = "^0.23.3"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
