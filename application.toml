@@ -1,2 +1,13 @@
 [data]
 source = "data/ISS_HAL_SOPs.csv"
+language = "en"
+test_train_split = 0.9
+
+[pipeline]
+word_embeddings = "bert"
+lemma_model = "lemma_antbnc"
+sentence_embeddings_pooling_strategy = "AVERAGE"
+classifier_epochs = 5
+
+[pipeline.bert]
+model = "bert_base_cased"
