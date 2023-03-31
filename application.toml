@@ -9,5 +9,10 @@ lemma_model = "lemma_antbnc"
 sentence_embeddings_pooling_strategy = "AVERAGE"
 classifier_epochs = 5
 
+
+# See https://nlp.johnsnowlabs.com/models for availble pretrained models
 [pipeline.bert]
 model = "bert_base_cased"
+
+[pipeline.elmo]
+model = "elmo"
